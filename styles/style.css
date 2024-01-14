@@ -23,11 +23,35 @@ body {
 a {
   text-decoration: none;
 }
+button {
+  border: 0;
+  outline: 0;
+  background-color: var(--red_primary);
+  color: #fff;
+  font-family: var(--poppins);
+  font-size: 1rem;
+  font-weight: 700;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .container {
   width: 83%;
   margin: 0 auto;
 }
-/* Navigation Menu Related Styles */
+
+.btn {
+  display: inline-flex;
+  padding: 10px 24px;
+  align-items: flex-start;
+  gap: 8px;
+  border-radius: 41px;
+  background: var(--red_primary);
+  cursor: pointer;
+}
+/* >>>>>>>>>>>>>>>>>> Navigation Menu Related Styles <<<<<<<<<<<<<<<<<<*/
 nav {
   display: flex;
   justify-content: space-between;
@@ -46,6 +70,8 @@ nav ul {
 }
 nav li {
   list-style: none;
+  cursor: pointer;
+  
 }
 nav ul a {
   color: #3a3a3a;
@@ -56,9 +82,34 @@ nav ul a {
 }
 .search {
   font-size: 1.5rem;
-  /* height: 1.5rem; */
-  /* margin-bottom: 0.6rem; */
 }
 .shopping {
   font-size: 2.25rem;
+}
+/* >>>>>>>>>>>>>>>>>> Banner Related Styles <<<<<<<<<<<<<<<<<<*/
+.banner_parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner_content_box h1 {
+  color: #3a3a3a;
+  font-family: var(--poppins);
+  font-size: 2.698rem;
+  font-weight: 700;
+  line-height: 4rem;
+}
+.banner_content_box p {
+  color: #3a3a3a;
+  font-family: var(--poppins);
+  font-size: 1rem;
+  font-weight: 600;
+  padding-bottom: 1.5rem;
+}
+.banner_parent div {
+  flex: 1;
+}
+.fa-arrow-right {
+  font-size: 1.5rem;
+  color: white;
 }
