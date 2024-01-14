@@ -71,7 +71,9 @@ nav ul {
 nav li {
   list-style: none;
   cursor: pointer;
-  
+}
+nav li:hover a {
+  color: var(--red_primary);
 }
 nav ul a {
   color: #3a3a3a;
@@ -79,6 +81,7 @@ nav ul a {
   font-weight: 600;
   font-size: 1rem;
   padding: 0.5rem 2.125rem;
+  transition: all 0.5s ease;
 }
 .search {
   font-size: 1.5rem;
