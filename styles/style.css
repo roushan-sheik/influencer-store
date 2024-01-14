@@ -20,6 +20,10 @@ body {
   max-width: 1440px;
   margin: auto;
 }
+footer {
+  height: 100vh;
+}
+
 a {
   text-decoration: none;
 }
@@ -89,6 +93,23 @@ nav ul a {
 .shopping {
   font-size: 2.25rem;
 }
+/* Navigation Menu Related Responsive design  */
+@media screen and (max-width: 992px) {
+  nav {
+    flex-direction: column-reverse;
+    padding: 2.513rem 0;
+  }
+  nav ul a {
+    font-size: 0.8rem;
+    padding: 0.2rem 0.5rem;
+  }
+  .search {
+    font-size: 0.9rem;
+  }
+  .shopping {
+    font-size: 1.8rem;
+  }
+}
 /* >>>>>>>>>>>>>>>>>> Banner Related Styles <<<<<<<<<<<<<<<<<<*/
 .banner_parent {
   display: flex;
@@ -115,4 +136,30 @@ nav ul a {
 .fa-arrow-right {
   font-size: 1.5rem;
   color: white;
+}
+/* Banner Related Responsive Design */
+@media screen and (max-width: 992px) {
+  .banner_parent {
+    flex-direction: column-reverse;
+  }
+  .banner_content_box {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner_content_box h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+    text-align: center;
+  }
+  .banner_content_box p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .btn {
+    font-size: 0.8rem;
+  }
 }
