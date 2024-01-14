@@ -20,7 +20,45 @@ body {
   max-width: 1440px;
   margin: auto;
 }
+a {
+  text-decoration: none;
+}
 .container {
   width: 83%;
   margin: 0 auto;
+}
+/* Navigation Menu Related Styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 4.513rem 0;
+  align-items: center;
+}
+nav h2 {
+  color: #3a3a3a;
+  font-size: 1.5rem;
+  font-family: var(--poppins);
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav li {
+  list-style: none;
+}
+nav ul a {
+  color: #3a3a3a;
+  font-family: var(--poppins);
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5rem 2.125rem;
+}
+.search {
+  font-size: 1.5rem;
+  /* height: 1.5rem; */
+  /* margin-bottom: 0.6rem; */
+}
+.shopping {
+  font-size: 2.25rem;
 }
