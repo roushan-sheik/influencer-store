@@ -163,3 +163,30 @@ nav ul a {
     font-size: 0.8rem;
   }
 }
+/* Responser Section  */
+.responser_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3.8rem 0;
+  gap: 3.2rem;
+}
+.responser_section div {
+  height: 2.2rem;
+  width: 99px;
+}
+.responser_section div img {
+  object-fit: contain;
+}
+/* Responser Responsive Related Styles */
+@media screen and (max-width: 992px) {
+  .responser_section {
+    padding: 3rem 0;
+    gap: 2.2rem;
+    flex-wrap: wrap;
+  }
+  .responser_section div {
+    height: 2.5rem;
+    width: 3.2rem;
+  }
+}
